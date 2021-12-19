@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app - Juanjo García</title>
+  <!-- ESTILOS PROPIOS -->
+  <link rel="stylesheet" href="estilos.css">
+  <!-- FUNCIONES PROPIAS -->
+  <script src="funciones.js" defer></script>
+  <!-- CDN FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+</head>
+<body>
+  <!-- CALCULADORA -->
+  <div class="calculadora">
+
+    <!-- HEADER -->
+    <div class="calculadora__header">
+      <span class="title">calc</span>
+      <div class="theme">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+      </div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="calculadora__resultado">
+      <p class="operacion"></p>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="calculadora__botones">
+      <!-- NÚMEROS -->
+      <input type="button" value="0" class="boton" id="cero">
+      <input type="button" value="1" class="boton" id="uno">
+      <input type="button" value="2" class="boton" id="dos">
+      <input type="button" value="3" class="boton" id="tres">
+      <input type="button" value="4" class="boton" id="cuatro">
+      <input type="button" value="5" class="boton" id="cinco">
+      <input type="button" value="6" class="boton" id="seis">
+      <input type="button" value="7" class="boton" id="siete">
+      <input type="button" value="8" class="boton" id="ocho">
+      <input type="button" value="9" class="boton" id="nueve">
+      <!-- SÍMBOLOS Y ACCIONES -->
+      <input type="button" value="." class="boton" id="coma">
+      <input type="button" value="+" class="boton" id="suma">
+      <input type="button" value="-" class="boton" id="resta">
+      <input type="button" value="*" class="boton" id="multiplicacion">
+      <input type="button" value="/" class="boton" id="division">
+      <input type="button" value="DEL" class="boton" id="borrar">
+      <input type="button" value="RESET" class="boton" id="reset">
+      <input type="button" value="=" class="boton" id="igual">
+    </div>
+  </div>
+
+</body>
+</html>
